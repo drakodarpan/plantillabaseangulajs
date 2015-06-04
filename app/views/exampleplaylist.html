@@ -1,0 +1,19 @@
+<div class="container" ng-controller="PlaylistCtrl">
+  <ul>
+    <li ng-repeat="titulo in playlist">
+      {{ titulo }}
+    </li>
+  </ul>
+</div>
+
+Play list metodos ctrl:
+
+<div ng-controller="PlaylistMetodosCtrl">
+  <ul>
+    <br />
+    <li ng-repeat="titulo in playlist">
+      {{ titulo }}
+      <a class="button" ng-click="borrar($index)" >&times;</a>
+    </li>
+  </ul>
+</div>

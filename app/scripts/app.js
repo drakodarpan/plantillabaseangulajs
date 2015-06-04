@@ -27,6 +27,18 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/example',{
+        templateUrl: 'views/example.html',
+        controller: 'miCtrl'
+      })
+      .when('/exampleplaylist', {
+        templateUrl: 'views/exampleplaylist.html',
+        controller: 'PlaylistCtrl'
+      })
+      .when('/exampleplaylist', {
+        templateUrl: 'views/exampleplaylist.html',
+        controller: 'PlaylistMetodosCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
